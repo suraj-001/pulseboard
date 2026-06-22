@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url 'https://repo.spring.io/snapshot' }
+    }
+}
+
+rootProject.name = 'pulseboard'
+
+include 'services:auth-service'
+include 'services:team-service'
+include 'services:update-service'
+include 'services:analytics-service'
+include 'services:report-service'
+include 'services:notification-service'
+include 'services:api-gateway'
+include 'services:config-server'
+include 'services:discovery-server'
